@@ -1,2 +1,3 @@
 rootProject.name = "NDKSample"
 include ':app'
+include ':ndklib'
