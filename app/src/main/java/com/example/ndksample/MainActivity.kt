@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         init {
-            System.loadLibrary("jniExample")
+            System.loadLibrary("native-lib")
         }
     }
 
