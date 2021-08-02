@@ -27,7 +27,9 @@ add_library( # Sets the name of the library.
 
         # Provides a relative path to your source file(s).
         # 코드 경로 설정!!
-        native-lib.cpp )
+        native-lib.cpp
+        Calculator.h
+        Calculator.cpp)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
@@ -55,13 +57,13 @@ target_link_libraries( # Specifies the target library.
         # included in the NDK.
         ${log-lib} )
 
-add_library( app-glue
-        STATIC
-        ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c )
-
-target_link_libraries( native-lib
-        app-glue
-        ${log-lib} )
+# add_library( app-glue
+#         STATIC
+#         ${ANDROID_NDK}/sources/android/native_app_glue/android_native_app_glue.c )
+#
+# target_link_libraries( native-lib
+#         app-glue
+#         ${log-lib} )
 
 
 # 6. 이미 컴파일 된 외부 라이브러리를 불러와서 사용하기 (매우 중요)

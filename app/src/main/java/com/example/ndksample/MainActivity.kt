@@ -8,6 +8,10 @@ class MainActivity : AppCompatActivity() {
 
     // 라이브러리 내부에 다음과 같은 함수명이 있다는 것을 JVM 에게 알려준다.
     external fun stringFromJNI() : String
+    external fun add(num1: Int, num2 : Int): String
+    external fun minus(num1: Int, num2 : Int): String
+    external fun multi(num1: Int, num2 : Int): String
+    external fun divider(num1: Int, num2 : Int): String
 
     companion object {
         init {
