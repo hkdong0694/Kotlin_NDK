@@ -11,9 +11,7 @@ Calculator::Calculator() : num1(2), num2(4) {
 
 }
 
-Calculator::~Calculator() {
-
-}
+Calculator::~Calculator() = default;
 
 int Calculator::getAdd(const int &num1, const int &num2) {
     return num1 + num2;
@@ -29,7 +27,7 @@ int Calculator::getMulti(const int &num1, const int &num2) {
 }
 
 int Calculator::getDivide(const int &num1, const int &num2) {
-    if(num1 == 0 || num2 || 0) return 0;
+    if(num1 == 0 || num2 == 0) return 0;
     else {
         if(num1 > num2) return num1 / num2;
         else return num2 / num1;

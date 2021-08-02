@@ -14,10 +14,10 @@ private:
 public:
     Calculator();
     Calculator(int num1, int num2);
-    int getAdd(const int& num1, const int& num2);
-    int getMinus(const int& num1, const int& num2);
-    int getMulti(const int& num1, const int& num2);
-    int getDivide(const int& num1, const int& num2);
+    static int getAdd(const int& num1, const int& num2);
+    static int getMinus(const int& num1, const int& num2);
+    static int getMulti(const int& num1, const int& num2);
+    static int getDivide(const int& num1, const int& num2);
     ~Calculator();
 };
 
