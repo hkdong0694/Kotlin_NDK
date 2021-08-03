@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        tv_main.text = stringFromJNI()
+        tv_main.text = add(10, 20)
+        // tv_main.text = minus(10, 20)
+        // tv_main.text = multi(10, 20)
+        // tv_main.text = divider(10, 20)
+
     }
 }
